@@ -229,7 +229,6 @@ footer {
     bottom: 0;
     display: flex;
 }
-
 .footer-distributed {
     background-color: #2d2a30;
     box-sizing: border-box;
@@ -239,51 +238,39 @@ footer {
     padding: 50px 50px 60px 50px;
     margin-top: 80px;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left {
     width: 20%;
 }
-
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 36px 'Cookie', cursive;
     margin: 0;
 }
-
-
 .footer-distributed h3 span {
     color: #e0ac1c;
 }
 
 /* Footer links */
-
 .footer-distributed .footer-links {
     color: #ffffff;
     margin: 20px 0 12px;
 }
-
 .footer-distributed .footer-links a {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
 }
-
 .footer-distributed .footer-company-name {
     color: #8f9296;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center {
     width: 50%;
 }
-
 .footer-distributed .footer-center i {
     background-color: #33383b;
     color: #ffffff;
@@ -294,31 +281,24 @@ footer {
     text-align: center;
     line-height: 42px;
     margin: 10px 15px;
-    vertical-align: middle;
 }
-
 .footer-distributed .footer-center i.fa-envelope {
     font-size: 17px;
     line-height: 38px;
 }
-
 .footer-distributed .footer-center p {
     color: #ffffff;
-    vertical-align: middle;
     margin: 0;
 }
-
 .footer-distributed .footer-center p span {
     font-weight: normal;
     font-size: 14px;
     line-height: 2;
 }
-
 .footer-distributed .footer-center p a {
     color: #e0ac1c;
     text-decoration: none;
 }
-
 /* Footer Right */
 
 .footer-distributed .footer-right {
@@ -424,8 +404,11 @@ footer {
     font-weight: 500;
 }
 
-.content .left-side .details .text-one,
-.content .left-side .details .text-two {
+.content .left-side .details .text-one{
+    font-size: 14px;
+    color: #afafb6;
+}
+.content .left-side .details .text-two{
     font-size: 14px;
     color: #afafb6;
 }
@@ -481,11 +464,6 @@ footer {
     padding: 8px 16px;
     border-radius: 6px;
     background: rgb(39, 72, 97);
-    cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.button input[type="button"]:hover {
-    background: rgb(39, 72, 97);
 }
 
