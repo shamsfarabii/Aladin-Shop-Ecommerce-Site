@@ -1,0 +1,336 @@
+.body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+}
+.container{
+    margin-bottom: 100px;
+}
+.navbar-brand img{
+    padding-top: 10%;
+}
+.title {
+    padding-left: 20%;
+    padding-right: 15%;
+}
+.title h1{
+    font-size: xxx-large;
+    font-weight: 700;
+}
+.title h1 span{
+    color: rgb(52, 141, 52);
+}
+.color-bg{
+    background-color: rgb(205, 205, 223);
+    border-radius: 10px;
+}
+.carousel-item{ 
+    padding: 100px 90px;
+}
+.it{
+    padding:10px 50px;
+}
+.price{
+    color: rgb(21, 124, 131);
+}
+.buy-now-button{
+    background-image: linear-gradient(to bottom,rgb(37, 200, 212) 0%,rgb(26, 156, 165) 100%);
+    border-radius: 8px;
+    color: white;
+    padding: 9px 25px;
+    cursor: pointer;
+    border: none;
+}
+.carousel-item h1{
+    font-size: x-large;
+    font-weight: 600;
+}
+.add-cart-button{
+    background-image: linear-gradient(to bottom,rgb(37, 200, 212) 0%,rgb(26, 156, 165) 100%);
+    border-radius: 8px;
+    color: white;
+    padding: 9px 25px;
+    cursor: pointer;
+    border: none;
+}
+.container-cart{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.row{
+    padding: 20px;
+}
+
+.input-group{
+	width: 140px;
+}  
+
+.cart-item .form-control{
+	background-color: #F6F5FA;
+	border: none;
+    width: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.cont{
+    display: flex;
+}
+.cart{
+    padding: 20px;
+    margin: 0px 10px;
+    background-color: white;
+    color: rgb(39, 72, 97);
+    border-radius: 10px;
+    border-style: solid;
+    
+}
+.cart hr{
+    color: black;
+}
+.cart h1{
+    text-align: center;
+}
+.checkout{
+    text-align: center;   
+    width: 300px;   
+    padding-top: 100px;
+}
+.uproduct{
+    display: flex;
+    border-radius: 10px;
+    border-style: solid;
+    justify-content: center;
+}
+.uproduct img{
+    width: 400px;
+    padding: 50px;
+}
+.uproduct p{
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+.ct h3{
+    text-align: center;
+    padding: 50px;
+}
+.rev{
+    background-color: tomato;
+}
+.rev_item{
+    justify-content: center;
+}
+.rev-section{
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+}
+.rev-title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    margin-bottom: .5rem;
+}
+.note{
+    font-size: 1.1rem;
+    color: rgb(150, 150, 150);
+    font-style: italic;
+}
+.reviews{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.review{
+    margin: 0 1rem;
+    min-width: 300px;
+    flex: 1;
+}
+
+.head-review{
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+}
+.head-review img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+.body-review{
+    background-color: rgb(238,238,238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225,225);
+}
+.name-review{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+}
+.rating{
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+}
+.desc-review{
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+}
+.color-rev{
+    background-color: rgb(205, 205, 223);
+}
+
+
+/* footer css shuru*/
+footer {
+    bottom: 0;
+    display: flex;
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 20%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 50%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer-center p{
+
+    padding: 50px;
+}
+/* footer css shesh*/
+
+  
