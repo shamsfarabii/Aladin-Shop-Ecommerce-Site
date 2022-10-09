@@ -68,6 +68,7 @@ function ClearCart()
     ttprice.innerText = 0;
     tax.innerText = 0;
     price.innerText = 0;
+    tproduct.innerText = 0;
 }
 document.getElementById("add1").addEventListener('click', function () 
 {
