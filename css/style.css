@@ -155,7 +155,6 @@
 .rev-section {
     margin: auto;
     padding: 0 1rem;
-    max-width: 1100px;
     text-align: center;
 }
 
@@ -180,7 +179,6 @@
 
 .review {
     margin: 0 1rem;
-    min-width: 300px;
     flex: 1;
 }
 
