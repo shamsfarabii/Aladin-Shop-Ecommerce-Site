@@ -57,7 +57,6 @@ function addToCart(pr)
     var temp2 = parseInt(document.getElementById('price').innerText);
     tproduct.innerText = temp+1;
     price.innerText = temp2+pr;
-
 }
 function ClearCart()
 {
@@ -97,7 +96,6 @@ document.getElementById("add6").addEventListener('click', function ()
 
 
 
-
 document.getElementById("p1").addEventListener('click', function () 
 {
     addToCart(3039);
@@ -125,5 +123,10 @@ document.getElementById("p5").addEventListener('click', function ()
 document.getElementById("clear").addEventListener('click', function () 
 {
     ClearCart();
+});
+
+document.getElementById("check-btn").addEventListener('click', function () 
+{
+    alert("Thanks for shopping!"+"\nTotal amount of purchased: "+totaltax.innerText);
 });
 
