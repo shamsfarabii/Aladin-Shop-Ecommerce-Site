@@ -1,62 +1,42 @@
-function updateProductNumber(product, pri) 
+function updateProductNumber(qt,pri) 
 {
-    const productInput = document.getElementById(product);
-    var qota = document.getElementById('tproduct').innerText;
-    var temp = parseInt(qota);
-    var total = parseInt(productInput.value);
-    tproduct.innerText = total+temp;
-    var tprice = total*pri;
-    var temp3 = parseInt(document.getElementById('price').innerText);
-    price.innerText = tprice+temp3;
-
-    if((tprice+temp3)<=500)
+    var select_product = parseInt(document.getElementById(qt).value); //How much quatity I selected from cart
+    var ini_product = parseInt(document.getElementById('tproduct').innerText); //Initial value of "Total Product"
+    tproduct.innerText = select_product+ini_product; //Set result to "Total product"
+    var tprice = select_product*pri; //Multiply product quantity with product price
+    var ini_price = parseInt(document.getElementById('price').innerText); //Initial value of "Price"
+    var subtotal_price = tprice+ini_price; //Final Total Price
+    price.innerText = subtotal_price; //Set result to "Price"
+    if(subtotal_price<=500)
     {
-        var del = 100;
-        delivery.innerText = del;
+        delivery.innerText = 100;
+        shipping.innerText = 100;
+        var del_charge = 100;
     }
-    else if((tprice+temp3)<=800)
+    else if(subtotal_price<=800)
     {
-        var del = 150;
-        delivery.innerText = del;
-    }
-    else
-    {
-        var del = 200;
-        delivery.innerText = del;
-    }
-
-
-    if((tprice+temp3)<=500)
-    {
-        var ship = 100;
-        shipping.innerText = ship;
-    }
-    else if((tprice+temp3)<=800)
-    {
-        var ship = 150;
-        shipping.innerText = ship;
+        delivery.innerText = 150;
+        shipping.innerText = 150;
+        var del_charge = 150;
     }
     else
     {
-        var ship = 200;
-        shipping.innerText = ship;
+        delivery.innerText = 200;
+        shipping.innerText = 200;
+        var del_charge = 200;
     }
-
-    var totalPrice = parseInt(tprice+temp3);
-    ttprice.innerText = totalPrice;
-
-    var tx = totalPrice*0.15;
-    tax.innerText = parseInt(tx);
-
-    totaltax.innerText = parseInt(tx+totalPrice);
+    var price_with_del_charge = subtotal_price+del_charge+del_charge; //Total Price+Delivery+Shipping
+    ttprice.innerText = price_with_del_charge; //Set result to "Total Price"
+    var tx = subtotal_price*0.15; //Count Tax according to product
+    tax.innerText = parseInt(tx); //Set result to "Tax"
+    totaltax.innerText = parseInt(tx+price_with_del_charge); //Set result to "Total(inc. TAX)"
 }
-function addToCart(pr)
+function addToCart(pr) //If choose product from carousel (Single Product)
 {
-    var qota = document.getElementById('tproduct').innerText;
-    var temp = parseInt(qota);
-    var temp2 = parseInt(document.getElementById('price').innerText);
-    tproduct.innerText = temp+1;
-    price.innerText = temp2+pr;
+    var in_prod = parseInt(document.getElementById('tproduct').innerText);
+    var in_price = parseInt(document.getElementById('price').innerText);
+    tproduct.innerText = in_prod+1;
+    price.innerText = in_price+pr;
 }
 function ClearCart()
 {
@@ -66,7 +46,6 @@ function ClearCart()
     shipping.innerText = 0;
     ttprice.innerText = 0;
     tax.innerText = 0;
-    price.innerText = 0;
     totaltax.innerText = 0;
 }
 document.getElementById("add1").addEventListener('click', function () 
@@ -93,9 +72,6 @@ document.getElementById("add6").addEventListener('click', function ()
 {
     updateProductNumber('c6', 700);
 });
-
-
-
 document.getElementById("p1").addEventListener('click', function () 
 {
     addToCart(3039);
@@ -117,9 +93,6 @@ document.getElementById("p5").addEventListener('click', function ()
     addToCart(789);
 });
 
-
-
-
 document.getElementById("clear").addEventListener('click', function () 
 {
     ClearCart();
@@ -129,4 +102,3 @@ document.getElementById("check-btn").addEventListener('click', function ()
 {
     alert("Thanks for shopping!"+"\nTotal amount of purchased: "+totaltax.innerText);
 });
-
