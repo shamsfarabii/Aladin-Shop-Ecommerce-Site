@@ -105,20 +105,7 @@
     display: flex;
     flex-direction: row;
 }
-@media (max-width: 800px) {
-    .cont {
-      flex-direction: column;
-    }
-}
-/* .item{
-    display: flex;
-    flex-direction: row;
-}
-@media (max-width: 800px) {
-    .item {
-      flex-direction: column;
-    }
-} */
+
 .cart {
     padding: 20px;
     margin: 0px 10px;
@@ -149,11 +136,6 @@
     justify-content: center;
     flex-direction: row;
 }
-@media (max-width: 800px) {
-    .uproduct {
-      flex-direction: column;
-    }
-}
 
 .uproduct img {
     width: 400px;
@@ -172,13 +154,8 @@
     padding: 50px;
 }
 
-.rev {
-    background-color: tomato;
-}
+/* review shuru */
 
-.rev_item {
-    justify-content: center;
-}
 
 .rev-section {
     margin: auto;
@@ -221,13 +198,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
 }
 
 .body-review {
     background-color: rgb(238, 238, 238);
     padding: 2.5rem;
-    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
 }
 
 .name-review {
@@ -251,6 +226,7 @@
     background-color: rgb(205, 205, 223);
 }
 
+/* review shesh */
 
 /* footer css shuru*/
 footer {
@@ -258,11 +234,7 @@ footer {
     display: flex;
     flex-direction: row;
 }
-@media (max-width: 800px) {
-    footer {
-      flex-direction: column;
-    }
-}
+
 .footer-distributed {
     background-color: #2d2a30;
     box-sizing: border-box;
